@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css">
+  <title>Utwórz konto | ACME</title>
+</head>
+
+<body>
+  <div class="flex">
+    <img class="hidden lg:block h-screen w-[500px] object-cover object-left-bottom"
+      src="/pexels-andrea-piacquadio-972804.jpg" alt="">
+    <main class="min-h-screen flex flex-col justify-between items-center gap-10 p-3 lg:p-8">
+      <form method="post" class="max-w-[500px] w-full flex flex-col gap-10">
+        <img width="250" height="250" src="/logo.png" alt="ACME" class="rounded-full mx-auto">
+        <div>
+          <label class="form-label" for="full-name">Imię i nazwisko</label>
+          <input class="form-input" type="text" name="full-name" id="full-name" value="Michał Desol" required>
+        </div>
+        <div>
+          <label class="form-label" for="email">E-mail</label>
+          <input class="form-input" type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label class="form-label" for="password">Hasło</label>
+          <input class="form-input" type="password" name="password" id="password" required>
+        </div>
+        <div class="flex items-center gap-3">
+          <input class="form-checkbox" type="checkbox" id="newsletter-consent" name="newsletter-consent">
+          <label for="newsletter-consent">Chcę otrzymywać wiadomości o promocjach oraz specjalnych ofertach na podany
+            adres e-mail.</label>
+        </div>
+        <button class="btn-primary" type="submit">Utwórz konto</button>
+      </form>
+      <p class="text-xs text-neutral-500">Administratorem danych osobowych jest ACME Inc. Podanie danych osobowych,
+        takich jak imię, adres e-mail i
+        hasło, jest dobrowolne, ale niezbędne do rejestracji konta na naszej platformie. Państwa dane są przetwarzane w
+        sposób zgodny z obowiązującymi przepisami prawa, a dostęp do nich mają jedynie upoważnieni pracownicy ACME
+        Inc. Zapewniamy, że Państwa dane są bezpieczne, a ich udostępnienie osobom trzecim wymaga Państwa wyraźnej
+        zgody.
+        Przysługuje Państwu prawo do dostępu, poprawiania oraz usuwania swoich danych osobowych. Więcej informacji na
+        ten temat znajduje się w naszej Polityce Prywatności, dostępnej na stronie internetowej.</p>
+    </main>
+  </div>
+</body>
+
+</html>

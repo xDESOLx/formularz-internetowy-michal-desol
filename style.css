@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Tenor Sans';
+    src: url('/TenorSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sansation';
+    src: url('/Sansation_Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply uppercase font-tenor text-xl tracking-widest bg-brand p-2 hover:bg-black hover:text-white transition-colors;
+    }
+
+    .form-label {
+        @apply font-tenor text-xl uppercase;
+    }
+
+    .form-input {
+        @apply block w-full p-3 mt-3 border-black focus:border-black focus:ring focus:ring-black focus:ring-opacity-10;
+    }
+
+    .form-checkbox {
+        @apply border-black text-black focus:border-black focus:ring focus:ring-offset-0 focus:ring-black focus:ring-opacity-10;
+    }
+}
